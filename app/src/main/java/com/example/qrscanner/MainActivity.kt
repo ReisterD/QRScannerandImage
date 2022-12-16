@@ -63,12 +63,9 @@ class MainActivity : AppCompatActivity() {
         ScanContract()
     ) { result: ScanIntentResult ->
         if (result.contents != null) {
-            val builder: AlertDialog.Builder = AlertDialog.Builder(this@MainActivity)
-            builder.setTitle("Result")
-            builder.setMessage(result.contents)
-            builder.setPositiveButton("OK",
-                DialogInterface.OnClickListener { dialogInterface, i -> dialogInterface.dismiss() })
-                .show()
+            //val builder: AlertDialog.Builder = AlertDialog.Builder(this@MainActivity)
+            textWifi = findViewById(R.id.WifiInfo)
+            textWifi.text = result.toString()
         }
     }
 
