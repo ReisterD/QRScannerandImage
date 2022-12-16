@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">QRScanner</string>
+    <string name="image_btn">Image</string>
+    <string name="camera_btn">Camera</string>
 </resources>
